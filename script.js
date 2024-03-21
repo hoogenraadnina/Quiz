@@ -1,4 +1,5 @@
 // inspiratie voor quiz https://www.sitepoint.com/simple-javascript-quiz/
+//quiz is nog work in progress :)
 var myQuestions = [
   {
     question: "1. Wat is Javascript?",
