@@ -2,7 +2,7 @@ document.getElementById('submit').addEventListener('click', function() {
   //Chat GPT met uitleg gekregen 
 
   // Array met correcte antwoorden
-  const correctAnswers = ['true', 'false', ]; // Voeg hier de correcte antwoorden toe in dezelfde volgorde als de vragen
+  const correctAnswers = ['true', 'false', 'false', 'true']; // Voeg hier de correcte antwoorden toe in dezelfde volgorde als de vragen
   
   // Elementen ophalen
   const answers = document.querySelectorAll('.answers input:checked');
@@ -42,31 +42,33 @@ setTimeout(myTimeout4, 110000);
 
 });
 
+
+function myTimeout1() {
+  document.getElementById("timer").innerHTML = "⏱️  30 sec😃";
+}
+function myTimeout2() {
+  document.getElementById("timer").innerHTML = "⏱️  1 min 🫣";
+}
+function myTimeout3() {
+  document.getElementById("timer").innerHTML = "⏱️  1 min 30 sec👿";
+}
+function myTimeout4() {
+  document.getElementById("timer").innerHTML = "⏱️  je hebt nog 10 seconden😱";
+}
+
+
+function deTijd() {
+  alert('De tijd is om, goed geprobeerd <3');
+}
+
+
+
 //met hulp van ChatGpt
 document.getElementById("laadButton").addEventListener("click", function() {
   clearTimeout(startTimeout);
 });
 
 //----------
-
-function myTimeout1() {
-  document.getElementById("timer").innerHTML = "30 sec😃";
-}
-function myTimeout2() {
-  document.getElementById("timer").innerHTML = "1 min 🫣";
-}
-function myTimeout3() {
-  document.getElementById("timer").innerHTML = "1 min 30 sec👿";
-}
-function myTimeout4() {
-  document.getElementById("timer").innerHTML = "je hebt nog 10 seconden😱";
-}
-
-
-
-function deTijd() {
-  alert('De tijd is om, goed geprobeerd <3');
-}
 
 
 let mijnAudio = new Audio('audio.wav') // bron muziek: https://www.youtube.com/watch?v=1jnQz5nL2c0&ab_channel=JasonBeauchamp
