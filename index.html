@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Raad welke land?</title>
+    <link rel="icon" href="img/quizicon.ico" type="image/x-icon"> <!--https://www.flaticon.com/free-icon/quiz_10292284-->
+    <title>Quiz Javascript</title>
 </head>
+
 <body>
     <script src="script.js" defer></script>
     <h1>Test je kennis over Javascipt!</h1>
-    <img src="javagif.gif" alt="javagif"> <!--https://tenor.com/fr/view/js-javascript-java-javajavajava-software-gif-18138384-->
-    <p id="timer">Ik zal je laten weten wanneer je al 30 seconden, 2 minuten en 4 minuten bezig bent 
-        met de quiz </p>
-    <p>PAS OP&#9940; Na 4 minuten kan je de quiz niet meer invullen</p>
-    <p>Als je klaar bent...Klik hier op start</p>
-    <button id="start">Start</button>
-    <div id="quiz"></div>
-    <div id="answers"></div>
-    <button id="submit">Resultaat</button>
-    
-    <div class="container"></div>
+    <img src="img/javagif.gif" alt="javagif">
+    <!--https://tenor.com/fr/view/js-javascript-java-javajavajava-software-gif-18138384-->
+    <p id="timer">Ik zal je laten weten hoeveel tijd je nog hebt </p>
+    <p>PAS OP&#9940; Na 2 minuten kan je de quiz niet meer invullen</p>
+    <p>Klaar? 1,2,3...Klik op start</p>
+    <button id="startButton">Start</button>
 
+    <div id="quiz">
+        <div class="question">Javascript is een programmeertaal die wordt gebruikt voor het ontwikkelen van dynamische
+            en interactieve webpaginas</div>
+        <div class="answers">
+            <label><input type="radio" name="question1" value="true">Waar</label>
+            <label><input type="radio" name="question1" value="false">Onwaar</label>
+        </div>
+        <div class="question">Schrijf je Hallo Wereld in een alert box op deze manier: alertBox("Hallo Wereld")</div>
+        <div class="answers">
+            <label><input type="radio" name="question2" value="true">Waar</label>
+            <label><input type="radio" name="question2" value="false">Onwaar</label>
+        </div>
+        <div class="question">Schrijf je Hallo Wereld in een alert box op deze manier: alertBox("Hallo Wereld")</div>
+        <div class="answers">
+            <label><input type="radio" name="question2" value="true">Waar</label>
+            <label><input type="radio" name="question2" value="false">Onwaar</label>
+        </div>
+        <div class="question">Schrijf je Hallo Wereld in een alert box op deze manier: alertBox("Hallo Wereld")</div>
+        <div class="answers">
+            <label><input type="radio" name="question2" value="true">Waar</label>
+            <label><input type="radio" name="question2" value="false">Onwaar</label>
+        </div>
+
+    </div>
+    <div id="result"></div>
+    <button id="submit">Resultaat</button>
+    <div class="container"></div>
     <div class="progress">
     </div>
+    <img id="laadButton" src="img/laadbutton.png" alt="Herlaad" style="cursor: pointer;">
+    <!-- bron img: https://www.flaticon.com/free-icon/refresh-button_61225 -->
 </body>
+
 </html>

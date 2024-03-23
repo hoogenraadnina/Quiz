@@ -1,6 +1,6 @@
 body{
   font-size: 20px;
-  font-family: fantasy;
+  font-family: Optima, sans-serif;
   color: #333;
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -8,8 +8,13 @@ body{
   text-align: center;
 }
 
+
 img{
   width: 10vw;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .question{
@@ -22,12 +27,12 @@ img{
   text-align: center;
 }
 
-#submit, #start{
+#submit, #startButton{
   font-size: 20px;
   background-color: lightblue;
   color: black;
   border: 0px;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 20px;
   cursor: pointer;
   margin-bottom: 20px;
@@ -37,10 +42,24 @@ img{
   background-color: red;
 }
 
-#start:hover{
+#startButton:hover{
   background-color: green;
 }
 
+.correct {
+  color: green; /* Color for correct answers */
+}
+
+.incorrect {
+  color: red; /* Color for incorrect answers */
+}
+
+
 #timer{
   color: red;
+}
+
+
+#laadButton{
+  width: 4vw;
 }
