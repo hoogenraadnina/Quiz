@@ -1,33 +1,43 @@
-body{
+body {
   font-size: 20px;
   font-family: Optima, sans-serif;
   color: #333;
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   /*https://cssgradient.io/*/
   text-align: center;
 }
 
-
-img{
+img {
   width: 10vw;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-.question{
+.question {
   text-align: center;
 }
 
-.answers{
+.answers {
   text-align: center;
   margin-bottom: 20px;
   text-align: center;
 }
 
-#submit, #startButton{
+.correct {
+  color: green;
+  /* Color for correct answers */
+}
+
+.incorrect {
+  color: red;
+  /* Color for incorrect answers */
+}
+
+#submit,
+#startButton {
   font-size: 20px;
   background-color: lightblue;
   color: black;
@@ -38,28 +48,18 @@ ul{
   margin-bottom: 20px;
 }
 
-#submit:hover{
+#submit:hover {
   background-color: red;
 }
 
-#startButton:hover{
+#startButton:hover {
   background-color: green;
 }
 
-.correct {
-  color: green; /* Color for correct answers */
-}
-
-.incorrect {
-  color: red; /* Color for incorrect answers */
-}
-
-
-#timer{
+#timer {
   color: red;
 }
 
-
-#laadButton{
+#laadButton {
   width: 4vw;
 }
